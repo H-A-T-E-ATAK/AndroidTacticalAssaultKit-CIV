@@ -161,4 +161,3 @@ jobs:
         asset_path: atak-civ-sdk-${{ github.event.release.tag_name }}.zip
         asset_name: atak-civ-sdk-${{ github.event.release.tag_name }}.zip
         asset_content_type: binary/octet-stream
-        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
