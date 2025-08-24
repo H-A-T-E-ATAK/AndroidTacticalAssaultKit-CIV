@@ -155,7 +155,7 @@ jobs:
     - name: publish ATAK SDK release artifact
       uses: actions/upload-release-asset@v1.0.1
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
       with:
         upload_url: ${{ github.event.release.upload_url }}
         asset_path: atak-civ-sdk-${{ github.event.release.tag_name }}.zip
